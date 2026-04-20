@@ -17,7 +17,7 @@ import client from '../helpers/client'
     console.log(categories)
     return(
        <nav>
-          {categories?.map((c, index) => <Link key={index} to={c.slug.current}>{c.categoryname}</Link>)}
+          {categories?.map((c, index) => <Link key={index} to={"/kategori/" + c.slug.current}>{c.categoryname}</Link>)}
         </nav>
     )
   }
